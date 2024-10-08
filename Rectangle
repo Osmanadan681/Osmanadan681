@@ -1,0 +1,51 @@
+/*
+Project name : rectangl
+Author
+Date : 07,10,2024
+*/
+#include <iostream>
+using namespace std;
+
+class Rectangle {
+public:
+    
+    double length;
+    double width;
+
+    // to get the area
+    double getArea() {
+        return length * width;
+    }
+
+    // to get the perimeter
+    double getPerimeter() {
+        return 2 * (length + width);
+    }
+
+    //to display area and perimeter
+    void display() {
+      cout << "Area: " << getArea() << endl;
+      cout << "Perimeter: " << getPerimeter() << endl;
+    }
+};
+
+int main() {
+    // Create two objects of Rectangle
+    Rectangle rect1;
+    Rectangle rect2;
+
+    rect1.length = 10;
+    rect1.width = 5;
+
+    rect2.length = 8;
+    rect2.width = 4;
+
+    cout << "Rectangle 1:" << endl;
+    rect1.display();
+
+   
+    cout << "\nRectangle 2:" << endl;
+    rect2.display();
+
+    return 0;
+}
